@@ -1,0 +1,365 @@
+:root {
+  --first-color: #212121;
+  --second-color: #757575;
+  --third-color: #2196f3;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--first-color);
+}
+a {
+  text-decoration: none;
+}
+
+.logo,
+.dark-team,
+.white-team {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--third-color);
+}
+
+.dark-team {
+  color: var(--first-color);
+}
+
+.white-team {
+  color: #ffffff;
+}
+
+.navigation-link-studio,
+.navigation-link-portfolio,
+.navigation-link,
+.contact-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation-link-studio,
+.navigation-link-portfolio {
+  color: var(--third-color);
+}
+
+.navigation-link {
+  color: var(--first-color);
+}
+
+.contact-link {
+  color: var(--second-color);
+}
+.contact-item-adress:focus,
+.contact-link-footer:focus,
+.contact-item-adress:hover,
+.contact-link-footer:hover,
+.navigation-link:focus,
+.navigation-link:hover,
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--third-color);
+}
+
+.heading-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.button-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--third-color);
+}
+
+.peculiarities-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--first-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--first-color);
+}
+
+.peculiarities-text,
+.team-text,
+.portfolio-text {
+  color: var(--second-color);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.section-contacts {
+  background-color: #2f303a;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.contact-item-adress {
+  color: #fff;
+}
+
+.contact-link-footer {
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border: none;
+  margin: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
+  color: var(--first-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--third-color);
+  color: #fff;
+}
+
+.button-list {
+  display: flex;
+}
+.portfolio-titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Болоки*/
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 94px 0;
+}
+
+.container-header {
+  display: flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+.logo {
+  width: 145px;
+  height: 30px;
+  margin: 24px 0 25px 15px;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 30px 0 30px 95px;
+}
+.navigation-item {
+  margin-right: 50px;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  margin: 30px 0 30px 275px;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section-hero {
+  background-color: rgba(196, 196, 196);
+  background-image: url(../images/hero-baner.jpg);
+}
+
+.heading-hero {
+  width: 700px;
+  height: 120px;
+  padding-top: 106px;
+  margin: auto;
+  text-align: center;
+}
+
+.button-hero {
+  width: 200px;
+  height: 50px;
+  margin: 30px 500px 106px;
+  padding: 10px 29px;
+}
+
+.peculiarities-list {
+  display: flex;
+  justify-content: center;
+}
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+.peculiarities-item {
+  width: 270px;
+  height: 100px;
+}
+
+.section-job {
+  padding-top: 0;
+}
+
+.job-heading {
+  margin: 0;
+  text-align: center;
+}
+.job-list {
+  margin: 50px 0 0;
+  display: flex;
+}
+
+.job-item {
+  margin: 0 15px;
+}
+
+.section-team {
+  background: #f5f4fa;
+}
+
+.team-heading {
+  margin: 0;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  margin: 50px 15px 0;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-item {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.footer {
+  margin: 0;
+  padding: 60px 0;
+}
+
+.contacts-list-footer {
+  margin: 20px 0 0 15px;
+}
+
+.contact-item-footer {
+  height: 21px;
+}
+
+.contact-item-footer:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.button-list {
+  justify-content: center;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.portfolio-list {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  margin: 14px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+.portfolio-titel {
+  height: 36px;
+  margin: 20px 24px 4px;
+}
+.portfolio-text {
+  height: 30px;
+  margin: 0px 24px 20px;
+}
