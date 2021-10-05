@@ -243,14 +243,14 @@ a {
 }
 
 .section-hero {
+  padding: o;
   background-color: rgba(196, 196, 196);
-  background-image: url(../images/hero-baner.jpg);
 }
 
 .heading-hero {
   width: 700px;
   height: 120px;
-  padding-top: 106px;
+  padding-top: 200px;
   margin: auto;
   text-align: center;
 }
@@ -343,7 +343,7 @@ a {
 }
 
 .portfolio-list {
-  margin-top: 35px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -354,7 +354,12 @@ a {
   border: 1px solid #eeeeee;
   background: #ffffff;
 }
-
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.portfolio-item:nth-child(-n + 3) {
+  margin-top: 0;
+}
 .portfolio-titel {
   height: 36px;
   margin: 20px 24px 4px;
@@ -362,4 +367,10 @@ a {
 .portfolio-text {
   height: 30px;
   margin: 0px 24px 20px;
+}
+
+.heading {
+  background-image: url(../images/hero-baner.jpg);
+  height: 600px;
+  max-width: 1600px;
 }
