@@ -8,6 +8,8 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -296,13 +298,13 @@ a {
 }
 
 .team-heading {
-  margin: 0;
+  margin: 0.5px 0;
   text-align: center;
 }
 
 .team-list {
   display: flex;
-  margin: 50px 15px 0;
+  margin: 50px 15px 15px;
 }
 
 .team-item:not(:last-child) {
@@ -323,7 +325,7 @@ a {
 }
 
 .contacts-list-footer {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 54px;
 }
 
 .contact-item-footer {
@@ -370,7 +372,5 @@ a {
 }
 
 .heading {
-  background-image: url(../images/hero-baner.jpg);
   height: 600px;
-  max-width: 1600px;
 }
