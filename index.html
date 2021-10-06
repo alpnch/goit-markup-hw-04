@@ -10,14 +10,15 @@
 
     <title>WebStudio</title>
     
-    <link   rel="stylesheet"
-            href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
-    <header class="conteiner">
+    <header class="header">
         <!--Section navigation-->
-        <div class="container-header">
+        <div class="container-header container">
             <a class="logo" 
             href="./index.html">Web<span class="dark-team">Studio</span></a>
             <nav class="navigation">
@@ -37,21 +38,21 @@
                 </ul>
             </nav>
             <ul class="contacts-list">
-                <li class="contact-item">
+                <li class="contact-item icon-email">
                     <a  class="contact-link" 
                         href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="contact-item">
+                <li class="contact-item icon-tel">
                     <a  class="contact-link" 
                         href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
     </header> 
-    <main class="conteiner"> 
+    <main> 
         <!--Section hero-->
-        <section class="conteiner section-hero">
-            <div class="heading">
+        <section class="section-hero hero-bunner">
+            <div class="container heading">
                 <h1 class="heading-hero">
                     ЭФФЕКТИВНЫЕ РЕШЕНИЯ
                     ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -60,26 +61,46 @@
         </section>
         <!--Section peculiarities-->
         <section class="section">
-            <div class="peculiarities">
+            <div class="container">
                 <h2 class="visually-hidden">Заголовок</h2>
                 <ul class="peculiarities-list">
-                    <li class="peculiarities-item">
+                    <li class="peculiarities-item icon-antenna">
+                        <div class="peculiarities-thumb">
+                            <svg class="peculiarities-icon">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="peculiarities-title">внимание к деталям</h3>
                         <p class="peculiarities-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="peculiarities-item">
+                    <li class="peculiarities-item icon-clock">
+                        <div class="peculiarities-thumb">
+                            <svg class="peculiarities-icon">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="peculiarities-title">пунктуальность</h3>
                         <p class="peculiarities-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="peculiarities-item">
+                    <li class="peculiarities-item icon-diagram">
+                        <div class="peculiarities-thumb">
+                            <svg class="peculiarities-icon">
+                                <use href="./images/icons.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="peculiarities-title">планирование</h3>
                         <p class="peculiarities-text">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li class="peculiarities-item">
+                    <li class="peculiarities-item icon-astronaut">
+                        <div class="peculiarities-thumb">
+                            <svg class="peculiarities-icon">
+                                <use href="./images/icons.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="peculiarities-title">современные технологии</h3>
                         <p class="peculiarities-text">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -90,7 +111,7 @@
         </section>
         <!--Section our job-->
         <section class="section section-job">
-            <div class="job">
+            <div class="container">
                 <h2 class="job-heading">Чем мы занимаемся</h2>
                 <ul class="job-list">
                     <li class="job-item">
@@ -113,7 +134,7 @@
         </section>
         <!--Section our team-->
         <section class="section section-team">
-            <div class="team"> 
+            <div class="container team"> 
                 <h2 class="team-heading">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-item">
@@ -121,41 +142,68 @@
                             alt="Igor" 
                             width="270" 
                             height="260">
+                        <div class="tumba">
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p class="team-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img src="./images/Olga.jpg" 
                             alt="Olga" width="270" 
                             height="260">
+                        <div class="tumba">
                         <h3 class="team-title">Ольга Репина</h3>
                         <p class="team-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img src="./images/Nilokay.jpg" 
                             alt="Nikolay" 
                             width="270" 
                             height="260">
+                        <div class="tumba">
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p class="team-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img src="./images/Mikhail.jpg" 
                             alt="Mikhail" 
                             width="270" 
                             height="260">
+                        <div class="tumba">                        
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p class="team-text">UI Designer</p>
+                        <ul class="team-socials-list">
+                            <li class="button-icons">
+                                <a class="team-social-link" href="#">
+                                    <svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a>
+                        </li>
+                        <li class="button-icons"><svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="button-icons"><svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="button-icons"><svg class="icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </li>
+                        </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer class="conteiner">
+    <footer class=>
         <!--Section contacts-->
-        <section class="section-contacts">
-            <div class="footer">
-                <a  class="logo" 
+            <div class="container">
+                <a  class="logo-footer" 
                     href="./index.html">Web<span class="white-team">Studio</span></a>
                 <address class="address">
                     <ul class="contacts-list-footer">
@@ -176,7 +224,7 @@
                     </ul>
                 </address>
             </div>
-        </section>
+
     </footer>
 </body>
 </html>
