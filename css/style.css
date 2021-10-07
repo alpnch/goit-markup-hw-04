@@ -242,6 +242,11 @@ img {
   padding: 94px 0;
 }
 
+.section-clients {
+  padding-top: 165px;
+  padding-bottom: 94px;
+}
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -312,7 +317,8 @@ img {
   background: #f5f4fa;
 }
 
-.team-heading {
+.team-heading,
+.clients-heading {
   margin: 0;
   text-align: center;
 }
@@ -321,6 +327,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+}
+
+.clients-list {
+  display: flex;
 }
 
 .team-title {
@@ -413,20 +423,6 @@ footer {
   height: 70px;
 }
 
-/* .peculiarities-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-color: var(--icon-backdround);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-  background-size: 70px;
-} */
-
 .team-socials-list {
   display: flex;
   justify-content: center;
@@ -464,12 +460,68 @@ footer {
   margin-right: 10px;
 }
 
-/*.button-icons:hover,
-.button-icons:focus {
-  background-color: var(--third-color);
-  border-radius: 50%;
-}*/
-
-.icon {
+.icon,
+.clients-icon,
+.icon-contacts {
   fill: #afb1b8;
 }
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clients-item {
+  padding: 0;
+  border-radius: 4%;
+  align-items: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-social-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4%;
+}
+
+.clients-social-link:hover,
+.clients-social-link:focus {
+  border-color: var(--third-color);
+}
+
+.clients-social-link:hover .clients-icon,
+.clients-social-link:focus .clients-icon {
+  fill: var(--third-color);
+}
+
+/*.contacts-list-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  padding: 0;
+  align-items: center;
+}
+
+.icon-contacts-mail {
+  padding: 0;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-link:hover .icon-contacts,
+.contact-link:focus .icon-contacts {
+  fill: var(--third-color);
+}*/
