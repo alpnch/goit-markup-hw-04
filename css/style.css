@@ -184,6 +184,14 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.social-heading-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -301,9 +309,6 @@ img {
   padding-top: 0;
 }
 
-.job-heading {
-  text-align: center;
-}
 .job-list {
   margin-top: 50px;
   display: flex;
@@ -317,8 +322,12 @@ img {
   background: #f5f4fa;
 }
 
+.job-heading,
 .team-heading,
 .clients-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
   margin: 0;
   text-align: center;
 }
@@ -359,6 +368,10 @@ footer {
 
 .contact-item-footer:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-social {
+  display: block;
 }
 
 .button-list {
@@ -461,8 +474,7 @@ footer {
 }
 
 .icon,
-.clients-icon,
-.icon-contacts {
+.clients-icon {
   fill: #afb1b8;
 }
 .clients-list {
@@ -502,26 +514,68 @@ footer {
   fill: var(--third-color);
 }
 
-/*.contacts-list-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-item {
   padding: 0;
   align-items: center;
-}
-
-.icon-contacts-mail {
-  padding: 0;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  align-items: center;
   justify-content: center;
 }
+.icon-contacts {
+  margin-right: 10px;
+  fill: var(--second-color);
+}
+
 .contact-link:hover .icon-contacts,
 .contact-link:focus .icon-contacts {
   fill: var(--third-color);
-}*/
+}
+
+.container-footer {
+  display: flex;
+}
+
+.footer-social {
+  padding-top: 12px;
+  padding-left: 70px;
+}
+
+.footer-socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-icons {
+  padding: 0;
+  align-items: center;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 10%),
+    rgba(255, 255, 255, 10%)
+  );
+}
+
+.footer-icons:hover,
+.footer-icons:focus {
+  background-image: linear-gradient(
+    to left,
+    var(--third-color),
+    var(--third-color)
+  );
+}
+
+.footer-icons:not(last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon {
+  fill: #fff;
+}
