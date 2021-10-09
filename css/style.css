@@ -250,11 +250,6 @@ img {
   padding: 94px 0;
 }
 
-.section-clients {
-  padding-top: 165px;
-  padding-bottom: 94px;
-}
-
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -533,11 +528,11 @@ footer {
 
 .container-footer {
   display: flex;
+  align-items: center;
 }
 
 .footer-social {
-  padding-top: 12px;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .footer-socials-list {
@@ -547,7 +542,7 @@ footer {
   margin-top: 20px;
 }
 
-.footer-icons {
+.footer-socials-item {
   padding: 0;
   align-items: center;
   border-radius: 50%;
@@ -558,8 +553,8 @@ footer {
   );
 }
 
-.footer-icons:hover,
-.footer-icons:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-image: linear-gradient(
     to left,
     var(--third-color),
@@ -567,7 +562,7 @@ footer {
   );
 }
 
-.footer-icons:not(last-child) {
+.footer-socials-item:not(last-child) {
   margin-right: 10px;
 }
 
@@ -577,7 +572,18 @@ footer {
   height: 44px;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
 }
 .footer-icon {
   fill: #fff;
+}
+
+.portfolio-items-hover {
+  display: block;
+}
+
+.portfolio-items-hover:hover,
+.portfolio-items-hover:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
